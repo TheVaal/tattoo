@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body{
+  margin: 0;
+  background-color: #121213;
+}
+
+
+img{
+  filter: brightness(80%) saturate(60%);
+}
+
+img:hover{
+  filter:brightness(80%)
+}
+dd, dl, dt, li, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+  justify-self: start;
+  align-self: flex-start;
+  filter: brightness(100%);
+}
+.App-header {
+  background-image: url(img/header_img.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top:4vmin;
+  padding-left:10vmin;
+}
+
+.Header-title{
+  color: #FFFFFF;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 11.46vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.8em;
+  letter-spacing: -4.4px;
+  text-align: start;
+  display: block;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.5em;
+}
+
+.Flex-row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Header-info{
+  font-family: "Gothic A1", Sans-serif;
+  display:flex;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.96px;
+  color: #FFFFFF;
+  justify-content: end;
+  align-content: center;
+  min-width: 65vw;
+  padding-right: 2vmin;
+}
+
+.Header-info p{
+  text-align: end;
+}
+
+.Left{
+  min-width: 20vw;
+  display:flex;
+  justify-content: start; 
+  align-items: start;
+  padding: 2vmin;
+  padding-left: 0;
+}
+.Call-icon{
+  height: 28px;
+}
+
+.align-center{
+  margin: 0 auto;
+}
+
+.App-Button{
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  fill: #121213;
+  color: #121213;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #FFFFFF;
+  border-radius: 0px 0px 0px 0px;
+  padding: 27px 101px 27px 101px;
+  justify-self: start;
+  align-self: start;
+  max-width: 90%;
+
+}
+
+.App-Button:hover{
+  margin:0 auto;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #121213;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #FFFFFF;
+  border-radius: 0px 0px 0px 0px;
+}
+
+ul li a {
+  color: #666666;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: -0.72px;
+}
+ul li a:hover {
+  color: #fff;
+
+}
+ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-align: end;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a{
+  box-shadow: none;
+  text-decoration: none;
+}
+.App-footer{
+  max-height: 100vh;
+  max-width: calc(100vw - 12vmin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top:4vmin;
+  padding-left:6vmin;
+  padding-right:6vmin;
+}
+.Footer-content{
+  min-width: 100%;
+  max-height: 90vh;
+  border-top:0.5vmin solid #FFFFFF;
+  padding-top:4vmin;
+  padding-left: 2vmin;
+  padding-bottom: 1vmin;
+  display: flex;
+  flex-direction: row;
+}
+.Footer-item{
+  max-width: 65%;
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 8vmin;
+}
+.Footer-item-end{
+  margin-left: 6vmin;
+  width: 35%;
+}
+
+.Footer-content h2 {
+  color: #FFFFFF;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 7.5vw;
+  font-weight: 400;
+  line-height: 0.8em;
+  letter-spacing: -2.88px;
+  text-align: left;
+  margin-block-start: 0;
+}
+
+.Footer-content h3 {
+  color: #666666;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  letter-spacing: 0.24px;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.Footer-title-main{
+  font-family: "Gothic A1", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: -0.96px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+.Footer-content span {
+  color: #666666;
+}
+
+.Footer-list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: start;
+  align-content: start;
+}
+
+.Footer-list-item a {
+  color: #fff;
+  margin-right: 2vmin;
+ }
+ .Footer-list-item a:hover {
+  color: #666666;
+ }
+
+ .App-content{
+  min-height: 100vh;
+  max-width: 100vw;
+  padding:4vmin;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .App-content h2 {
+  color: #FFFFFF;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 9vw;
+  font-weight: 400;
+  line-height: 0.8em;
+  letter-spacing: -2.88px;
+  text-align: left;
+  margin-block-start: 0;
+  
+}
+
+.side-tattoo{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 4vmin;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  align-content: center;
+}
+
+.center-tattoo{
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 4vmin;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.App-content h2 {
+  color: #FFFFFF;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 7.5vw;
+  font-weight: 400;
+  line-height: 0.8em;
+  letter-spacing: -2.88px;
+  text-align: center;
+  margin-block-start: 0;
+}
+
+.gallery-item {
+  width: 25vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.gallery-item p{
+  color: #666666;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  letter-spacing: 0.24px;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding:2vmin 0 4vmin 0;
+}
+.gallery-item p:hover{
+  color:#fff;
+}
+
+.gallery-item img {
+
+  display: block;
+  height:auto;
+}
+
+.gallery-spacer{
+  width: 40vw;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-Map{
+  width: calc(100vw - 4vmin);
+  min-height: 50vh;
+  border:0;
+  margin-top: 4vmin;
+}
+.App-card{
+  min-height: 100vh;
+  max-width: calc(100vw - 8vmin);
+  padding:4vmin;
+  display: flex;
+  flex-direction: row;
+  padding: 4vmin;
+}
+
+.App-card-column{
+  width: 50%;
+  height: 100vh;
+}
+.App-card-column img{
+  width: auto;
+  height: auto;
+  max-width: calc(50vw - 8vmin);
+}
+
+.App-card h1 {
+  color: #FFFFFF;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 11.46vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.8em;
+  letter-spacing: -4.4px;
+  text-align: left;   
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.App-card h3 {
+  color: #666666;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  letter-spacing: 0.24px;
+  text-align: start;
+}
+
+.App-card li span{
+  font-family: "Gothic A1", Sans-serif;
+  font-weight: 400;
+  line-height: 60px;
+  color: #FFFFFF;
+  padding-left: 0px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.24px;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.App-card li{
+  padding-bottom: calc(0px / 2);
+  font-family: "Gothic A1", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1vmin;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  text-align: left;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  display: flex;
+  margin: 1vmin;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-end {
+  justify-content: end;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: 000;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content img {
+  filter: brightness();
+  max-height: 90vh;
+}
+/* Close button */
+.close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  right: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 2;
+  color:#fff;
+  text-shadow: 2px 2px 2px black;
+}
+.call{
+  display: flex;
+}
+
+/* Modal content */
+.Callback-content {
+  background-color: #FFFFFF;
+  position: relative;
+  text-align: start;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 4vmin;
+}
+.Callback-close{
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: none;
+  padding-top: 4vmin;
+}
+
+.Callback-heading-title {
+  color: #121213;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 7.5vw;
+  font-weight: 400;
+  line-height: 0.8em;
+  letter-spacing: -2.88px;
+  padding: 4vmin;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.Callback-sub-text {
+  color: #121213;
+  font-family: "Gothic A1", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3em;
+  padding: 1vmin 4vmin 1vmin 4vmin;
+}
+.Callback-content-div {
+  width: 100%;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  padding: 1vmin 4vmin 1vmin 4vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: start;
+  text-align: start;
+}
+
+.Callback-content-div > label {
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  letter-spacing: 0.36px;
+  padding-bottom: 11px;
+  color: #A6A6A6;
+}
+
+.Callback-content-div > input{
+  font-family: "Gothic A1", Sans-serif;
+  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #121213;
+  background-color: #F3F3F3;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #F3F3F3;
+  border-radius: 0px 0px 0px 0px;
+  padding: 17px 28px 17px 28px;
+  color: #121213;
+  width: 80%;
+  
+}
+.Callback-hint{
+  color: #121213;
+  font-family: "Gothic A1", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3em;
+  padding: 1vmin 4vmin 1vmin 4vmin;
+}
+.Callback-button{
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #121213;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #FFFFFF;
+  border-radius: 0px 0px 0px 0px;
+  justify-self: start;
+  align-self: flex-start;
+  width: calc(100% - 2vmin);
+  padding: 27px 101px 27px 101px;
+  margin:0  4vmin 0  4vmin;
+}
+
+.Callback-button:hover{
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  fill: #121213;
+  color: #121213;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #121213;
+  border-radius: 0px 0px 0px 0px;
+  padding: 27px 101px 27px 101px;
+  width: calc(100%-2vmin);
+}
+@media screen and (max-width: 768px) {
+  
+  .App-card{
+    max-height: 80vh;
+    margin-bottom: 4vmin;
+  }
+  
+  .Callback-content{
+    width: 100%;
+  }
+
+  .Callback-heading-title{
+    font-size: 75px;
+    line-height: 1em;
+    letter-spacing: 0px;
+  }
+
+  .Callback-button{
+    width: calc(100% - 2vmin);
+  }
+
+  ul li a {
+    
+    color: #fff;
+  }
+  ul li a:hover {
+    color: #666666;
+  }
+  .call{
+    display: none;
+  }
+  .App-header{
+    min-height: 75vh;
+    max-height: 100vh;
+    padding:4vmin 2vmin;
+  }
+  .Left{  
+    justify-content: start;
+    padding: 0 0vmin 4vmin 0;
+  }
+
+  .Header-info {
+    justify-content: start;
+  }
+
+  .Header-title {
+    text-align: start;
+    font-size: 75px;
+    line-height: 1em;
+    letter-spacing: 0px;
+  }
+
+  .Footer-content{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .Footer-item{
+    width: 100%;
+    max-width: 100%;
+  }
+  .Footer-item-end{
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .Footer-content h2 {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 53px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-block-start: 0;
+  }
+  .App-Button{
+
+    max-width: 100%;
+  
+    padding: 14px 55px;
+  }
+
+  .Flex-row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .App-card{
+    max-height: 100vh;
+    max-width: calc(100vw - 8vmin);
+    flex-direction: column-reverse;
+    padding: 4vmin;
+    justify-content: center;
+  }
+  .title {
+    font-size: 53px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    margin-bottom: 4vmin;
+  }
+  ul{ text-align: start;}
+
+  .App-card h1 {
+    font-size: 53px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .App-card-column {
+    width: 100%;
+    max-height: 100vh;
+  }
+  .App-card{
+    min-height: 50vh;
+
+  }
+  .App-card-column img {
+    max-width: calc(80vw - 8vmin);
+  }
+  .App-content {
+    flex-direction: column;
+    width: 100%;
+    max-width: calc(100% - 4vmin);
+    padding: 4vmin 2vmin 4vmin 2vmin;
+  }
+  .side-tattoo{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .center-tattoo{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .gallery-item{
+    width: 100%;
+    height: auto;
+    max-height: 50%;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0 0 1em 0;
+  }
+
+  .gallery-item img {
+    display: block;
+    height: auto;
+    max-height: 50%;
+    max-width: calc(100vw);
+}
+  .gallery-spacer{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .App-card{
+    min-height: 60vh;
+    max-height: 80vh;
+
+  }
+  .App-Button{
+    min-width: 35vh;
+    max-width: 50vh;
+
+  }
+  .App-card-column {
+    width: 50%;
+    max-height: 50vh;
+  }
+
+  .App-content {
+    flex-direction: column;
+    width: 100%;
+    max-width: calc(100% - 4vmin);
+    padding: 4vmin 2vmin 4vmin 2vmin;
+  }
+  .side-tattoo{
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .center-tattoo{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .gallery-item{
+    width: 40%;
+    height: auto;
+    max-height: 50%;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0 0 1em 0;
+  }
+
+  .gallery-item img {
+    display: block;
+    height: auto;
+    max-height: 50%;
+    max-width: 100%;
+}
+  .gallery-spacer{display: none;}
+}

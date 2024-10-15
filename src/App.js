@@ -21,7 +21,6 @@ function App() {
   const openModal = (value) => {
     setImagePath(value);
   };
-
   const sendEmail = (e)=>{
     e.preventDefault();
     emailjs.sendForm("service_zl9xnm7", "template_pzwime2", e.target, 'Qmw-JCtsvJwfH6N76');
@@ -46,7 +45,7 @@ function App() {
         </div>
         <div className="Flex-row">
           <p className="Header-title">
-            SHNUROFF<br/>TATTOO
+            SHNUROF<br/>TATTOO
           </p>
           
         </div>

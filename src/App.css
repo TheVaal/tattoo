@@ -174,7 +174,7 @@ a{
   text-decoration: none;
 }
 .App-footer{
-  max-height: 100vh;
+  max-height: 100%;
   max-width: calc(100vw - 12vmin);
   display: flex;
   flex-direction: column;
@@ -266,7 +266,8 @@ a{
  }
 
  .App-content{
-  min-height: 100vh;
+  min-height: 100px;
+  max-height: 100%;
   max-width: 100vw;
   padding:4vmin;
   display: flex;
@@ -379,6 +380,7 @@ a{
 .App-card-column img{
   width: auto;
   height: auto;
+  max-height: 100%;
   max-width: calc(50vw - 8vmin);
 }
 
@@ -754,9 +756,8 @@ a{
     padding: 0;
   }
   .gallery-item{
-    width: 100%;
-    height: auto;
-    max-height: 50%;
+    width: 50%;
+    height: 100%;
     max-width: 100%;
     justify-content: center;
     padding: 0 0 1em 0;
@@ -765,8 +766,8 @@ a{
   .gallery-item img {
     display: block;
     height: auto;
-    max-height: 50%;
-    max-width: calc(100vw);
+    max-height: 100%;
+    max-width: 100%;
 }
   .gallery-spacer{display: none;}
 }

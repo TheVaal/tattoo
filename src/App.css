@@ -365,7 +365,7 @@ a{
   margin-top: 4vmin;
 }
 .App-card{
-  min-height: 100vh;
+  min-height: 100%;
   max-width: calc(100vw - 8vmin);
   padding:4vmin;
   display: flex;
@@ -375,7 +375,7 @@ a{
 
 .App-card-column{
   width: 50%;
-  height: 100vh;
+  height: 100%;
 }
 .App-card-column img{
   width: auto;
